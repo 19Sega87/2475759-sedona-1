@@ -44,12 +44,15 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: #ffffff;
+    width: 1280px;
+    background-color: #F2F2F2;
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -79,7 +82,7 @@ body {
 }
 
 .navigation-link {
-    display: block;
+    display: inline-block;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
@@ -88,7 +91,19 @@ body {
     text-decoration: none;
     text-transform: capitalize;
     margin: 0;
-    padding: 20px 16px 20px 16px;
+    padding: 20px 16px;
+}
+
+.navigation-link-current {
+    position: relative;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    outline: 2px solid #756257;
+    content: "";
+    width: 68px;
+    bottom: 0;
 }
 
 .navigation-user {
@@ -101,18 +116,6 @@ body {
 
 .navigation-item {
     list-style-type: none;
-}
-
-.navigation-link-current {
-    display: block;
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-    text-decoration: none;
-    text-transform: capitalize;
-    padding: 20px 16px 20px 16px;
 }
 
 .navigation-user-link {
@@ -135,7 +138,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    padding: 11px 4px 33px 20px;
+    margin-right: 20px;
 }
 
 .notification-badge {
@@ -149,6 +152,10 @@ body {
     color: #ffffff;
     padding: 5px 5px 5px 5px;
     position: absolute;
+    top: 11px;
+    right: 4px;
+    bottom: 33px;
+    left: 20px;
 }
 
 .button {
@@ -165,13 +172,31 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #615048;
+}
+
+.button:focus {
+    background-color: #615048;
+}
+
+.button:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+button:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .advantages-button {
     display: block;
     background-color: #756157;
-    padding: 8px 34px 8px 34px;
-    margin-left: 20px;
+    padding: 8px 34px;
     white-space: nowrap;
 }
 
@@ -262,6 +287,25 @@ body {
     margin-bottom: 62px;
     width: 175px;
     padding-left: 28px;
+    position: relative;
+}
+
+.advantages-blue .advantages-title::before {
+    position: absolute;
+    outline: 2px solid rgba(255, 255, 255, 0.3);
+    content: "";
+    width: 60px;
+    bottom: -30px;
+    left: 85px;
+}
+
+.advantages-title::before {
+    position: absolute;
+    outline: 2px solid rgba(0, 0, 0, 0.3);
+    content: "";
+    width: 60px;
+    bottom: -30px;
+    left: 85px;
 }
 
 .advantages-columns-2 {
@@ -472,6 +516,19 @@ body {
     padding: 8px 50px 8px 50px;
 }
 
+.newsletter-button:hover {
+    background-color: #68A2CA;
+}
+
+.newsletter-button:focus {
+    background-color: #68A2CA;
+}
+
+.newsletter-button:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .newsletter-form {
     width: 452px;
     display: flex;
@@ -483,7 +540,8 @@ body {
     display: flex;
     margin: 0;
     justify-content: space-between;
-    padding: 70px 40px 30px 70px;
+    padding: 40px 70px 30px 70px;
+    align-items: center;
 }
 
 .footer-social-list {
@@ -518,6 +576,22 @@ body {
     padding: 12px 13px 12px 13px
 }
 
+.icon {
+    fill: #83B3D3;
+}
+
+.icon:hover {
+    fill: #68A2CA;
+}
+
+.icon:focus {
+    fill: #68A2CA
+}
+
+.icon:active {
+    fill: rgba(104, 162, 202, 0.3);
+}
+
 .footer-phone {
     font-family: inherit;
     font-weight: 400;
@@ -528,6 +602,34 @@ body {
     color: #000000;
     text-decoration: none;
     width: 720px;
+}
+
+.footer-phone:hover {
+    color: #756157;
+}
+
+.footer-phone:focus {
+    color: #756157;
+}
+
+.footer-phone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+.icon-htmlacademy {
+    fill: #000000;
+}
+
+.icon-htmlacademy:hover {
+    fill: #756157;
+}
+
+.icon-htmlacademy:focus {
+    fill: #756157;
+}
+
+.icon-htmlacademy:active {
+    fill: rgba(117, 97, 87, 0.3);
 }
 
 .main-catalog {
@@ -541,6 +643,23 @@ body {
     width: 1060px;
     padding: 35px 70px 70px 70px;
     margin-bottom: 50px;
+}
+
+.logo-sedona {
+    margin: 0;
+    margin-bottom: -6px;
+}
+
+.navigation-link-current-catalog {
+    position: relative;
+}
+
+.navigation-link-current-catalog::before {
+    position: absolute;
+    outline: 2px solid #756257;
+    content: "";
+    width: 93px;
+    bottom: 0;
 }
 
 .main-inner-title {
@@ -564,7 +683,6 @@ body {
     padding: 0;
     margin: 0;
     width: 114px;
-    height: 21px;
     margin-top: 8px;
     margin-bottom: 40px;
 }
@@ -577,8 +695,27 @@ body {
     background-image: url(../images/breadcrumbs/breadcrumbs-main.svg);
     background-repeat: no-repeat;
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 13px;
+    height: 15px;
+    align-items: center;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+.breadcrumbs-link {
+    cursor: pointer;
+}
+
+.breadcrumbs-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+    color: #FFFFFF;
+}
+
+.breadcrumbs-link:active {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .products-container {
@@ -630,7 +767,7 @@ body {
     margin: 0;
     padding: 0;
     width: 549px;
-    margin-left: 140.15px;
+    margin-left: 140px;
 }
 
 .form-price-container {
@@ -639,6 +776,18 @@ body {
     gap: 2px;
     margin: 0;
     padding: 0;
+
+}
+
+.hotel-price-container {
+    margin: 0;
+    padding: 0;
+}
+
+.form-hotel-price {
+    margin: 0;
+    position: relative;
+    color: #000000;
 }
 
 .hotel-price-title {
@@ -649,16 +798,41 @@ body {
     margin-bottom: 32px;
 }
 
-.hotel-price-container {
-    margin: 0;
-    padding: 0;
-    margin-left: 140px;
+.hotel-price {
+    position: absolute;
+    content: "";
+    left: 106px;
+    right: 20px;
+    top: 12px;
+    bottom: 12px;
 }
 
-.hotel-price {
+.hotel-price-field {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
     margin: 0;
     width: 143px;
-    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.hotel-price-field-from {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.hotel-price-field-to {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.field-range {
+    width: 287px;
 }
 
 .price-button-container {
@@ -673,8 +847,40 @@ body {
     background-color: #82B3D3;
 }
 
+.button-apply:hover {
+    background-color: #68A2CA;
+}
+
+.button-apply:focus {
+    background-color: #68A2CA;
+}
+
+.button-apply:active {
+    background-color: #68A2CA;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .button-throw-off {
     background-color: transparent;
+}
+
+.button-throw-off:hover {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
+.button-throw-off:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.button-throw-off:active {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-apply + button:disabled {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
 }
 
 .search-hotel-container {
@@ -709,11 +915,12 @@ body {
 }
 
 .select-control {
-    width: 292px;
+    width: max-content;
     margin-left: 200px;
     border-radius: 4px;
     border-color: #E5E5E5;
     padding: 14px 131px 14px 20px;
+    box-sizing: border-box;
 }
 
 .page-filter-button {
@@ -732,8 +939,20 @@ body {
     background-repeat: no-repeat;
     background-color: #ffffff;
     border-radius: 4px;
-    border: 2px solid #000000;
+    border: 1px solid #E5E5E5;
     background-position: center;
+}
+
+.button-show-cards:hover {
+    outline: 2px solid #000000;
+}
+
+.button-show-cards:focus {
+    outline: 2px solid #68A2CA;
+}
+
+.button-show-cards:active {
+    outline: 2px solid #000000;
 }
 
 .button-one-product {
@@ -745,6 +964,18 @@ body {
     background-position: center;
 }
 
+.button-one-product:hover {
+    outline: 2px solid #000000;
+}
+
+.button-one-product:focus {
+    outline: 2px solid #68A2CA;
+}
+
+.button-one-product:active {
+    outline: 2px solid #000000;
+}
+
 .button-show-list {
     background-image: url(../images/View-icon/View-icon-list.svg);
     background-repeat: no-repeat;
@@ -752,6 +983,18 @@ body {
     border-radius: 4px;
     border: 1px solid #E5E5E5;
     background-position: center;
+}
+
+.button-show-list:hover {
+    outline: 2px solid #000000;
+}
+
+.button-show-list:focus {
+    outline: 2px solid #68A2CA;
+}
+
+.button-show-list:active {
+    outline: 2px solid #000000;
 }
 
 .product-card-list {
@@ -763,12 +1006,14 @@ body {
     padding-right: 70px;
     padding-left: 70px;
     justify-content: flex-start;
+    position: relative;
+    margin-bottom: 80px;
 }
 
 .product-card {
     display: grid;
     grid-template-rows: 212px min-content auto min-content min-content;
-    grid-template-columns: auto auto;
+    grid-template-columns: 140px 140px;
     column-gap: 20px;
     row-gap: 16px;
     background-color: #ffffff;
@@ -778,6 +1023,18 @@ body {
     border: 1px solid #E6E6E6;
     margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.product-card:last-child {
+    margin-bottom: 0;
+}
+
+.product-card-list::after {
+    position: absolute;
+    content: "";
+    outline: 1px solid #E6E6E6;
+    width: 1066px;
+    bottom: -40px;
 }
 
 .product-card-link {
@@ -811,8 +1068,7 @@ body {
 
 .product-card-button-detailed {
     background-color: #756157;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 26px;
 }
 
 .product-card-button-favorites-current {
@@ -821,10 +1077,36 @@ body {
     padding-bottom: 8px;
 }
 
+.product-card-button-favorites-current:hover {
+    background-color: #6C9E42;
+}
+
+.product-card-button-favorites-current:focus {
+    background-color: #6C9E42;
+}
+
+.product-card-button-favorites-current:active {
+    background-color: #7DB54F;
+    color: rgba(255, 255, 255, 0.3)
+}
+
 .product-card-button-favorites {
     background-color: #82B3D3;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+.product-card-button-favorites:hover {
+    background-color: #68A2CA;
+}
+
+.product-card-button-favorites:focus {
+    background-color: #68A2CA;
+}
+
+.product-card-button-favorites:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3)
 }
 
 .product-card-rating {
@@ -854,29 +1136,45 @@ body {
 
 .pagination-list {
     list-style: none;
-    display: grid;
-    grid-template-columns: 60px 60px 60px 60px 60px 60px;
-    grid-gap: 8px;
+    display: flex;
     padding-left: 70px;
     padding-right: 70px;
-    margin-top: 80px;
     margin-bottom: 60px;
 }
 
 .pagination-link {
-    text-decoration: none;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
     line-height: 36px;
     background-color: #82B3D3;
-    color: #ffffff;
     border-radius: 4px;
     padding: 11px 25px 13px 24px;
+    margin-left: 8px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.pagination-link:hover {
+    background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+    background-color: #68A2CA;
+}
+
+.pagination-link:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link-ellipsis {
+    margin-left: 8px;
     padding: 17px 21px 17px 21px;
+    background-color: #ffffff;
+    display: block;
 }
 
 .pagination-link-10 {
@@ -893,6 +1191,7 @@ body {
 
 .pagination-link-current {
     text-decoration: none;
+    color: #000000;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
@@ -900,7 +1199,7 @@ body {
     border-radius: 4px;
     padding: 12px 24px 12px 24px;
     background-color: #F2F2F2;
-    color: #000000;
+    display: block;
 }
 
 .field {
@@ -909,6 +1208,7 @@ body {
     height: 52px;
     border: none;
     padding: 0;
+    padding-left: 20px;
     margin: 0;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
