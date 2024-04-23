@@ -99,6 +99,17 @@ body {
     padding: 20px 16px;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+    background-color: #82B3D3;
+    color: #ffffff;
+}
+
+.navigation-link:active {
+    background-color: #82B3D3;
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .navigation-link-current {
     position: relative;
 }
@@ -125,26 +136,37 @@ body {
 }
 
 .navigation-user-link {
+    position: relative;
     display: block;
     list-style-type: none;
-    min-width: 44px;
-    min-height: 64px;
-    margin: 0;
+    width: 44px;
+    height: 64px;
+    margin: 0 auto;
     padding: 20px 12px 20px 12px;
     box-sizing: border-box;
-}
-
-.navigation-link-search {
-    background-image: url(../images/header/search.svg);
     background-repeat: no-repeat;
+    background-position: center;
+    color: #000000;
 }
 
 .navigation-link-favorite {
-    background-image: url(../images/header/heart.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
     margin-right: 20px;
+}
+
+.svg-user-link {
+    position: absolute;
+    top: 22px;
+}
+
+.navigation-user-link:hover,
+.navigation-user-link:focus {
+    background-color: #756157;
+    color: #ffffff;
+}
+
+.navigation-user-link:active {
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .notification-badge {
@@ -158,10 +180,11 @@ body {
     color: #ffffff;
     padding: 5px 5px 5px 5px;
     position: absolute;
+    box-sizing: border-box;
     top: 11px;
-    right: 4px;
+    right: 3px;
     bottom: 33px;
-    left: 20px;
+    left: 21px;
 }
 
 .button {
@@ -227,7 +250,7 @@ button:disabled {
     content: "";
     width: 1200px;
     height: 57px;
-    top: 428px;
+    top: 430px;
 }
 
 .description {
@@ -541,10 +564,7 @@ button:disabled {
     padding: 8px 50px 8px 50px;
 }
 
-.newsletter-button:hover {
-    background-color: #68A2CA;
-}
-
+.newsletter-button:hover,
 .newsletter-button:focus {
     background-color: #68A2CA;
 }
@@ -646,6 +666,7 @@ button:disabled {
 
 .icon-htmlacademy {
     fill: #000000;
+    cursor: pointer;
 }
 
 .icon-htmlacademy:hover {
@@ -662,9 +683,9 @@ button:disabled {
 
 /* Модальное окно */
 
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 .modal-container {
     position: fixed;
@@ -684,6 +705,7 @@ button:disabled {
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    margin-top: 396px;
 }
 
 .modal-search {
@@ -801,7 +823,6 @@ button:disabled {
     color: rgba(117, 97, 87, 0.3);
 }
 
-
 .button-minus {
     position: relative;
     border-top-left-radius: 4px;
@@ -829,6 +850,12 @@ button:disabled {
 .button-plus {
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
+}
+
+.plus {
+    position: absolute;
+    top: 17px;
+    left: 13px;
 }
 
 .input-plus-minus {
@@ -1069,7 +1096,7 @@ button:disabled {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-.contol-mark:focus {
+.control-input:focus + .control-mark {
     outline: 3px solid #68A2CA;
 }
 
