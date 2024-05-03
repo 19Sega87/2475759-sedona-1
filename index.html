@@ -38,8 +38,8 @@
             <li class="navigation-item">
               <a class="navigation-user-link navigation-link-favorite" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <svg class="svg-user-link" aria-hidden="true" focusable="false" width="20"
-                  height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <svg class="svg-user-link" aria-hidden="true" focusable="false" width="20" height="20"
+                  viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
                 </svg>
@@ -60,10 +60,10 @@
           </div>
         </section>
         <section class="description">
-          <h2 class="description-title">Седона - небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+          <h2 class="description-title">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
           <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </section>
-        <section>
+        <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantages-list">
             <li class="advantages-item">
@@ -95,7 +95,7 @@
             <li class="advantages-item">
               <div class="advantages-columns birge-of-devil">
                 <div class="advantages-container advantages-blue">
-                  <h3 class="advantages-title">Там есть мост дьявола</h3>
+                  <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
                   <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                 </div>
                 <img class="advantages-image-birge-of-devil" src="images/advantages/photo-2.jpg" width="800"
@@ -109,7 +109,7 @@
           <p>Опытный персонал и качественное обслуживание!</p>
         </section>
         <section class="service-advantages">
-          <h2 class="visually-hidden ">Сервис</h2>
+          <h2 class="visually-hidden">Сервис</h2>
           <ul class="services-list">
             <li class="services-item">
               <div class="service-container services-columns">
@@ -145,7 +145,7 @@
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-desription">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" placeholder="Ваш-e-mail" type="email" name="newsletter-email" id="newletter-email"
+            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newletter-email"
               required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
@@ -176,7 +176,7 @@
           <li class="footer-social-item">
             <a class="button-social button-social-You-Tube" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span>
-              <svg aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="currentColor"
+              <svg aria-hidden="true" focusable="false" width="22" height="17" viewBox="0 0 22 17" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M18.9402 0.356445H3.50738C1.64668 0.356445 0.333252 1.9502 0.333252 3.75645V13.8502C0.333252 15.7627 1.64668 17.3564 3.50738 17.3564H19.1591C20.8009 17.3564 22.3333 15.7627 22.3333 13.9564V3.75645C22.1143 1.9502 20.8009 0.356445 18.9402 0.356445ZM7.99494 12.8939V4.81894L15.3283 8.85645L7.99494 12.8939Z" />
@@ -232,11 +232,11 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <div class="modal-search-form">
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="check=in-date" class="date-label">Дата заезда:</label>
+              <label for="check=in-date" class="date-label">Дата Заезда:</label>
               <input class="field-modal" type="text" name="check-in-date" placeholder="27 апреля 2020"
                 id="check=in-date">
               <p class="input-with-text input-with-text-red">Мы не можем отправить вас в прошлое.</p>
-              <label for="check-out-date" class="date-label">Дата выезда:
+              <label for="check-out-date" class="date-label">Дата Выезда:
               </label>
               <input class="field-modal" type="text" name="check-out-date" placeholder="1 сентября 2021"
                 id="check-out-date">
@@ -249,7 +249,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                 </button>
-                <input class="field-people field-adults" type="text" name="adults" placeholder="2" id="adults">
+                <input class="field-people field-adults" type="number" name="adults" placeholder="2" id="adults">
                 <button type="button" class="button-plus-minus button-plus">
                   <svg class="plus" width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg">
@@ -276,7 +276,7 @@
                     <path d="M0 0L0 2L14 2V0L0 0Z" />
                   </svg>
                 </button>
-                <input class="field-people field-children" type="text" name="Children" placeholder="2" id="children">
+                <input class="field-people field-children" type="number" name="Children" placeholder="2" id="children">
                 <button class="button-plus-minus button-plus"><svg class="plus" width="14" height="14"
                     viewBox="0 0 14 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
