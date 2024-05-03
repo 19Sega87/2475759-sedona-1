@@ -410,11 +410,16 @@ button:disabled {
 }
 
 .service-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
-    padding: 81px 85px;
+    padding-top: 183px;
+    padding-left: 85px;
+    padding-right: 85px;
+    padding-bottom: 81px;
+
 }
 
 .services-columns {
@@ -457,30 +462,31 @@ button:disabled {
 }
 
 .services-item-house {
+    position: absolute;
     background-image: url(../images/services-icon/services-icon-1.svg);
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
-    transform: translateY(-1px);
-    margin-bottom: 30px;
+    top: 81px;
 }
 
 .services-item-food {
+    position: absolute;
     background-image: url(../images/services-icon/services-icon-2.svg);
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
-    transform: translate(-1px -1px);
-    margin-bottom: 30px;
+    top: 81px;
 }
 
 .services-item-souvenirs {
+    position: absolute;
     background-image: url(../images/services-icon/srvices-icon-3.svg);
     background-repeat: no-repeat;
     width: 75px;
-    height: 72px;
-    transform: translate(-6px 2px);
-    margin-bottom: 30px;
+    height: 76px;
+    top: 79px;
+    left: 168.5px;
 }
 
 .find-hotel {
@@ -727,9 +733,9 @@ button:disabled {
 
 /* Модальное окно */
 
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 .modal-container {
     position: fixed;
@@ -967,24 +973,25 @@ input[type="number"]::-webkit-outer-spin-button {
     top: -9px;
     width: 19px;
     height: 9px;
-    left: 50%;
+    left: 117px;
 }
 
 .tooltip-text {
+    position: absolute;
     font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
-    position: absolute;
     background-color: #333333;
     border-radius: 10px;
-    padding: 15px 18px 18px 22px;
+    padding: 20px 18px 23px 22px;
     width: 256px;
     z-index: 1;
-    transform: translate(-124px);
+    right: -116px;
+    top: 22px;
     margin-top: 18px;
-    /* display: none; */
+    display: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
