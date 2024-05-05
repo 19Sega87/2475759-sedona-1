@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico.png"><!-- 32×32 -->
   </head>
 
   <body>
@@ -69,7 +70,7 @@
           </header>
           <section class="catalog-products">
             <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-            <form action="https://echo.htmlacademy.ru/" method="post" class="form-price-container"
+            <form class="form-price-container" method="post" action="https://echo.htmlacademy.ru/"
               id="hotel-price-form">
               <div class="product-filter">
                 <fieldset class="catalog-filter-group">
@@ -109,14 +110,14 @@
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
+                      <label class="control" for="motel">
                         <input class="control-input visually-hidden" type="radio" name="motel">
                         <span class="control-mark"></span>
                         <span class="control-label">Мотель</span>
                       </label>
                     </li>
                     <li class="catalog-filter-item">
-                      <label class="control">
+                      <label class="control" for="apartaments">
                         <input class="control-input visually-hidden" type="radio" name="apartments">
                         <span class="control-mark"></span>
                         <span class="control-label"> Апартаменты</span>
@@ -130,13 +131,13 @@
                 <fieldset class="hotel-price-cotainer">
                   <legend class="hotel-price-title">Стоимость, ₽:</legend>
                   <p class=" form-hotel-price hotel-price-from">
-                    <label class="hotel-price">от</label>
-                    <input class="hotel-price-field hotel-price-field-from" type="text" name="hotel-price-from"
+                    <label class="hotel-price" for="hotel-price-from">от</label>
+                    <input class="hotel-price-field hotel-price-field-from" type="number" name="hotel-price-from"
                       value="0">
                   </p>
                   <p class="form-hotel-price">
-                    <label class="hotel-price">до</label>
-                    <input class="hotel-price-field hotel-price-field-to" type="text" name="hotel-price-to"
+                    <label class="hotel-price" for="hotel-price-to">до</label>
+                    <input class="hotel-price-field hotel-price-field-to" type="number" name="hotel-price-to"
                       value="9000">
                   </p>
                   <div class="range">
@@ -279,7 +280,7 @@
         <section class="newsletter-catalog">
           <h2 class="newsletter-catalog-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-desription">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="newsletter-form" method="post" action="https://echo.htmlacademy.ru/">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newletter-email"
               required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
