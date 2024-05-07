@@ -10,11 +10,12 @@
     display: grid;
     transition: all .5s;
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     background: linear-gradient(to bottom, white, black);
 }
+
 @font-face {
     font-family: "PT sans", sans-serif;
     font-style: normal;
@@ -246,9 +247,16 @@ body {
     color: rgba(255, 255, 255, 0.3);
 }
 
-button:disabled {
+.button:disabled {
     background-color: rgba(229, 229, 229, 1);
     color: rgba(255, 255, 255, 1);
+    cursor: default;
+}
+
+.button:hover:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    color: rgba(255, 255, 255, 1);
+    cursor: default;
 }
 
 .advantages-button {
@@ -436,12 +444,11 @@ button:disabled {
     padding-left: 85px;
     padding-right: 85px;
     padding-bottom: 81px;
-
 }
 
 .services-columns {
     background-color: rgba(131, 179, 211, 0.12);
-    background-size: 100% auto;
+    background-size: 100%;
     color: #000000;
 }
 
@@ -681,14 +688,14 @@ button:disabled {
     display: block;
     padding: 12px 13px 12px 13px;
     -webkit-transform: translate(-2px, -2px);
-            transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
 }
 
 .button-social-Telegram {
     display: block;
     padding: 12px 15px 13px 15px;
     -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
 }
 
 .button-social-You-Tube {
@@ -854,7 +861,7 @@ button:disabled {
 
 .date-label {
     -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
 }
 
 .field-modal {
@@ -1017,7 +1024,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .label-people {
     position: relative;
     -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     margin: 0;
 }
 
@@ -1262,10 +1269,6 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.control:disabled .control-mark {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
 .control-label {
     padding-left: 36px;
     cursor: pointer;
@@ -1279,9 +1282,9 @@ input[type="number"]::-webkit-outer-spin-button {
     color: rgba(255, 255, 255, 0.3);
 }
 
-.control-label:disabled {
+.control-input:disabled + .control-mark {
     color: rgba(255, 255, 255, 0.3);
-}
+  }
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -1513,6 +1516,11 @@ input[type="number"]::-webkit-outer-spin-button {
     color: rgba(255, 255, 255, 1);
 }
 
+.button-apply + button:hover:disabled {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+}
+
 /* Поиск по отелям */
 
 .search-hotel-container {
@@ -1563,8 +1571,8 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 2px solid #e5e5e5;
     padding: 12px 40px 12px 20px;
     -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     background-image: url(../images/select-control.svg);
     background-repeat: no-repeat;
     background-position: right 16px center;
@@ -1607,6 +1615,7 @@ input[type="number"]::-webkit-outer-spin-button {
     background-color: #ffffff;
     border-radius: 4px;
     background-position: center;
+    cursor: pointer;
 }
 
 .button-show-cards {
@@ -1614,16 +1623,28 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 2px solid #000000;
 }
 
-.button-show-cards:hover {
+.button-filter:hover {
     border: 2px solid #000000;
 }
 
-.button-show-cards:focus {
+.button-filter:focus {
     border: 2px solid #68a2Ca;
 }
 
-.button-show-cards:active {
+.button-filter:active {
     border: 2px solid #000000;
+}
+
+.button-filter:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    cursor: default;
+    border: none;
+}
+
+.button-filte:hover:disabled {
+    background-color: rgba(229, 229, 229, 1);
+    cursor: default;
+    border: none;
 }
 
 .button-one-product {
@@ -1631,33 +1652,9 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 2px solid #e5e5e5;
 }
 
-.button-one-product:hover {
-    border: 2px solid #000000;
-}
-
-.button-one-product:focus {
-    border: 2px solid #68a2ca;
-}
-
-.button-one-product:active {
-    border: 2px solid #000000;
-}
-
 .button-show-list {
     background-image: url(../images/View-icon/View-icon-list.svg);
     border: 2px solid #e5e5e5;
-}
-
-.button-show-list:hover {
-    border: 2px solid #000000;
-}
-
-.button-show-list:focus {
-    border: 2px solid #68a2ca;
-}
-
-.button-show-list:active {
-    border: 2px solid #000000;
 }
 
 /* Карточки товара */
@@ -1685,8 +1682,8 @@ input[type="number"]::-webkit-outer-spin-button {
     -ms-grid-columns: 140px 20px 140px;
     grid-template-columns: 140px 140px;
     -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
     row-gap: 16px;
     background-color: #ffffff;
     list-style: none;
@@ -1777,7 +1774,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0;
     text-wrap: wrap;
     -webkit-transform: translateY(1px);
-            transform: translateY(1px);
+    transform: translateY(1px);
 }
 
 .product-card-price {
@@ -1882,7 +1879,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: block;
     text-decoration: none;
     color: #ffffff;
-    width: 60px;
+    width: min-content;
     height: 60px;
 }
 
@@ -1914,7 +1911,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .pagination-link-10 {
     padding: 11.5px 18.5px 12.5px 18.5px;
-    width: 60px;
+    width: min-content;
     height: 60px;
 }
 
@@ -1940,7 +1937,7 @@ input[type="number"]::-webkit-outer-spin-button {
     padding: 0;
     white-space: nowrap;
     -webkit-clip-path: inset(100%);
-            clip-path: inset(100%);
+    clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }

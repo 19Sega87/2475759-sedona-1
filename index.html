@@ -48,7 +48,7 @@
               </a>
             </li>
             <li class="button">
-              <a class="button advantages-button" href="#">Хочу сюда!</a>
+              <a class="button advantages-button" type="button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -112,14 +112,14 @@
         <section class="service-advantages">
           <h2 class="visually-hidden">Сервис</h2>
           <ul class="services-list">
-            <li class="services-item">
-              <div class="service-container services-columns">
-                <span class="services-item-house "></span>
+            <li class="services-item services-columns">
+              <div class="service-container">
+                <span class="services-item-house"></span>
                 <h3 class="service-name">Жильё</h3>
                 <p class="service-description">Рекомендуем пожить<br> в настоящем мотеле,<br>всё как в кино!</p>
               </div>
             </li>
-            <li class="services-item">
+            <li class="services-item services-food">
               <div class="service-container services-food">
                 <span class="services-item-food"></span>
                 <h3 class="service-name">Еда</h3>
@@ -127,8 +127,8 @@
                 </p>
               </div>
             </li>
-            <li class="services-item">
-              <div class="service-container services-columns">
+            <li class="services-item services-columns">
+              <div class="service-container">
                 <span class="services-item-souvenirs"></span>
                 <h3 class="service-name">Сувениры</h3>
                 <p class="service-description">Не только китайского,<br> но и настоящего местного производства!</p>
@@ -140,7 +140,7 @@
           <h2 class="find-hotel-title">Заинтересовались?</h2>
           <p class="find-hotel-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
             гостиниц в Седоне</p>
-          <button class="button button-find-hotel" type="submit">Поиск гостиницы в Седоне</button>
+          <button class="button button-find-hotel" type="submit" disabled>Поиск гостиницы в Седоне</button>
         </section>
         <section class="newsletter">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -148,7 +148,7 @@
           <form class="newsletter-form" method="post" action="https://echo.htmlacademy.ru/">
             <input class="field" type="email" name="newsletter-email" id="newletter-email" placeholder="Ваш e-mail"
               required>
-            <button class="button newsletter-button" type="submit">Подписаться</button>
+            <button class="button newsletter-button" type="submit" disabled>Подписаться</button>
           </form>
         </section>
       </main>
