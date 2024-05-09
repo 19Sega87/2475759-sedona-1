@@ -159,6 +159,8 @@ body {
     align-items: center;
     margin: 0;
     padding: 0;
+    max-width: 268px;
+    flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -1284,7 +1286,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .control-input:disabled + .control-mark {
     color: rgba(255, 255, 255, 0.3);
-  }
+}
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -1476,6 +1478,8 @@ input[type="number"]::-webkit-outer-spin-button {
     padding-top: 1px;
     padding-bottom: 1px;
     padding: 8px 32px;
+    max-width: 191px;
+    text-wrap: wrap;
 }
 
 .button-apply:hover {
@@ -1494,6 +1498,8 @@ input[type="number"]::-webkit-outer-spin-button {
 .button-throw-off {
     background-color: transparent;
     padding: 8px 32px;
+    max-width: 191px;
+    text-wrap: wrap;
 }
 
 .button-throw-off:hover {
