@@ -16,6 +16,24 @@
     background: linear-gradient(to bottom, white, black);
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 1  version
+*/
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    transition: all .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: linear-gradient(to bottom, white, black);
+}
+
 @font-face {
     font-family: "PT sans";
     font-style: normal;
@@ -490,7 +508,7 @@ body {
 
 .services-item-house {
     position: absolute;
-    background-image: url(../images/services-icon/services-icon-1.svg);
+    background-image: url(../images/new-icon-advantages/new-icon-advantages-1.svg);
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
@@ -499,7 +517,7 @@ body {
 
 .services-item-food {
     position: absolute;
-    background-image: url(../images/services-icon/services-icon-2.svg);
+    background-image: url(../images/new-icon-advantages/new-icon-advantages-2.svg);
     background-repeat: no-repeat;
     width: 75px;
     height: 72px;
@@ -508,7 +526,7 @@ body {
 
 .services-item-souvenirs {
     position: absolute;
-    background-image: url(../images/services-icon/srvices-icon-3.svg);
+    background-image: url(../images/new-icon-advantages/new-icon-advantages-3.svg);
     background-repeat: no-repeat;
     width: 75px;
     height: 76px;
@@ -558,7 +576,7 @@ body {
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    background-image: url(../images/Subscribe.jpg);
+    background-image: url(../images/new-subscribe.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #82B3D3;
@@ -983,6 +1001,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .field-people::-webkit-inner-spin-button,
 .field-people::-webkit-outer-spin-button {
+    -webkit-appearance: none;
     appearance: none;
     margin: 0;
 }
@@ -1252,7 +1271,7 @@ input[type="number"]::-webkit-outer-spin-button {
     cursor: pointer;
 }
 
-.control:hover  .control-mark {
+.control:hover .control-mark {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1424,6 +1443,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .hotel-price-field::-webkit-inner-spin-button,
 .hotel-price-field::-webkit-outer-spin-button {
+    -webkit-appearance: none;
     appearance: none;
     margin: 0;
 }
@@ -1629,7 +1649,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .button-show-cards {
-    background-image: url(../images/View-icon/View-icon-cards.svg);
+    background-image: url(../images/new-view-icon/new-view-icon-cards.svg);
     border: 2px solid #000000;
 }
 
@@ -1658,12 +1678,12 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .button-one-product {
-    background-image: url(../images/View-icon/View-icon-one-product.svg);
+    background-image: url(../images/new-view-icon/new-view-icon-one-product.svg);
     border: 2px solid #e5e5e5;
 }
 
 .button-show-list {
-    background-image: url(../images/View-icon/View-icon-list.svg);
+    background-image: url(../images/new-view-icon/new-view-icon-list.svg);
     border: 2px solid #e5e5e5;
 }
 
@@ -1888,6 +1908,8 @@ input[type="number"]::-webkit-outer-spin-button {
     display: block;
     text-decoration: none;
     color: #ffffff;
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
     height: 60px;
 }
@@ -1920,6 +1942,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .pagination-link-10 {
     padding: 11.5px 18.5px 12.5px 18.5px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
     height: 60px;
 }
