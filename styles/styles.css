@@ -765,9 +765,9 @@ body {
 
 /* Модальное окно */
 
-/* .modal-container-close {
+.modal-container-close {
     display: none;
-} */
+}
 
 .modal-container {
     position: fixed;
@@ -961,13 +961,6 @@ body {
 
 .input-plus-minus {
     display: flex;
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
 }
 
 .field-people {
